@@ -18,7 +18,7 @@ public class OrbitLineRenderer : MonoBehaviour
         Vector3 center = orbitingBody.GetCenter;
 
         float orbitFraction = 1f / resolution;
-        for (int i = 0; i < resolution + 1; i++)
+        for (int i = 0; i < resolution; i++)
         {
             float eccentricAnomaly = i * orbitFraction * Mathf.PI * 2f;
 
@@ -45,6 +45,7 @@ public class OrbitLineRenderer : MonoBehaviour
         lineRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
         lineRenderer.startWidth = 0.1f;
         lineRenderer.endWidth = 0.1f;
+        lineRenderer.loop = true;
 
         orbitingBody = GetComponent<OrbitingBody>();
     }

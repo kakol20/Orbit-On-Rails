@@ -396,7 +396,7 @@ LineRenderer:
     shadowBias: 0.5
     generateLightingData: 0
   m_UseWorldSpace: 1
-  m_Loop: 0
+  m_Loop: 1
 --- !u!1 &128123320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,7 +1031,7 @@ LineRenderer:
     shadowBias: 0.5
     generateLightingData: 0
   m_UseWorldSpace: 1
-  m_Loop: 0
+  m_Loop: 1
 --- !u!1 &1494953738
 GameObject:
   m_ObjectHideFlags: 0
